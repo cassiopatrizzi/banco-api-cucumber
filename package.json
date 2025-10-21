@@ -1,0 +1,16 @@
+{
+  "name": "cucumber-banco-api",
+  "version": "1.0.0",
+  "description": "Gherkin das funcionalidades do banco-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "selenium-webdriver": "^4.37.0"
+  }
+}
