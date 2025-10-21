@@ -25,7 +25,6 @@ Siga os passos abaixo para preparar o ambiente:
 ```bash
 cd c:\caminho\para\seu\projeto
 ```
-
 2. Instale as dependências do Node:
 ```bash
 npm install
