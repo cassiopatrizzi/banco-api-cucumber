@@ -22,42 +22,38 @@ Para rodar o projeto, você precisa ter instalado:
 Siga os passos abaixo para preparar o ambiente:
 
 1. Navegue até o diretório do projeto:
-
-bash
+```bash
 cd c:\caminho\para\seu\projeto
+```
 
 2. Instale as dependências do Node:
-
-bash
+```bash
 npm install
-
+```
 3. Instale o selenium-webdriver / cucumber
-
-bash 
+```bash 
 npm install selenium-webdriver @cucumber/cucumber
-
+```
 
 🧩 Extensões Recomendadas do VS Code
 
 1. Cucumber (Gherkin) Full Support
 
-* Autor: Alexander Krechik
+    * Autor: Alexander Krechik
 
 
 ▶️ Execução dos Testes
-
-bash
+```bash
 npm run test
-
+```
 Direto com o npx
 Você pode executar o Cucumber diretamente (útil para testes ad-hoc ou debugging):
-
-bash
+```bash
 npx cucumber-js
-
+```
 📂 Estrutura do Repositório
 A organização do projeto segue a convenção do Cucumber:
-
+```
 cucumber-banco-api/
 ├── features/
 │   ├── login.feature               # Definição do(s) cenário(s) de login em Gherkin.
@@ -65,7 +61,7 @@ cucumber-banco-api/
 │       └── loginSteps.js           # Implementação do código (Selenium) para cada step, hooks (Before/After) e asserções.
 ├── package.json
 └── package-lock.json
-
+```
 
 ⚠️ Observações e Solução de Problemas
 
@@ -83,12 +79,12 @@ O Problema: Os testes falham quando o Selenium não consegue localizar um elemen
 
 2. Timeouts
 
-* Tempo de Espera: Elementos carregando lentamente podem exigir ajustes nos timeouts configurados no Selenium.
+    * Tempo de Espera: Elementos carregando lentamente podem exigir ajustes nos timeouts configurados no Selenium.
 
 3. Problemas no Driver do Selenium
 
-* Inicialização: Os hooks Before e After são responsáveis por criar e encerrar a instância do WebDriver.
+    * Inicialização: Os hooks Before e After são responsáveis por criar e encerrar a instância do WebDriver.
 
-* O WebDriver é o binário que permite que o Selenium controle o Chrome. Falhas na inicialização impedem a execução de todos os testes.
+    * O WebDriver é o binário que permite que o Selenium controle o Chrome. Falhas na inicialização impedem a execução de todos os testes.
 
 ![alt text](tabela_falhas.png)
