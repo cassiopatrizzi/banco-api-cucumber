@@ -1,4 +1,4 @@
-🥒 cucumber-banco-api: Testes E2E (Web)
+🥒 banco-api-cucumber: Testes E2E (Web)
 
 Suíte de testes End-to-End (E2E) para a aplicação web do banco, utilizando Cucumber (Gherkin) para definição de cenários e Selenium WebDriver para automação no navegador Chrome.
 
@@ -53,7 +53,7 @@ npx cucumber-js
 📂 Estrutura do Repositório
 A organização do projeto segue a convenção do Cucumber:
 ```
-cucumber-banco-api/
+banco-api-cucumber/
 ├── features/
 │   ├── login.feature               # Definição do(s) cenário(s) de login em Gherkin.
 │   └── step_definitions/

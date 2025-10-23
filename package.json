@@ -1,5 +1,5 @@
 {
-  "name": "cucumber-banco-api",
+  "name": "banco-api-cucumber",
   "version": "1.0.0",
   "description": "Gherkin das funcionalidades do banco-api",
   "main": "index.js",
